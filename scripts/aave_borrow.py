@@ -8,4 +8,9 @@ def main():
     erc20_address = config["networks"][network.show_active()]["weth_token"]
     if network.show_active() in ["mainnet-fork"]:
         get_weth()
-    # get_weth()
+    # ABI
+    # Address
+    lending_pool = get_lending_pool()
+
+def get_lending_pool():
+    
