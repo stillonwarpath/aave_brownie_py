@@ -1,3 +1,6 @@
+from scripts.helpful_scripts import get_account
+
+
 def main():
     get_weth()
 
@@ -8,4 +11,4 @@ def get_weth():
     """
     # ABI
     # Address
-    pass
+    account = get_account()
