@@ -1,4 +1,4 @@
-from brownie import accounts, networks, config
+from brownie import accounts, network, config
 
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
 FORKER_LOCAL_ENVIRONMENT = ["mainnet-fork-dev"]
@@ -15,8 +15,8 @@ def get_account(index=None, id=None):
         return accounts.load(id)
 
     if (
-        networks.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS
-        or networks.show_active() in FORKER_LOCAL_ENVIRONMENT
+        network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS
+        or network.show_active() in FORKER_LOCAL_ENVIRONMENT
     ):
         return accounts[0]
 
