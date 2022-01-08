@@ -1,6 +1,6 @@
 from brownie import accounts, network, config
 
-LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
+LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local", "mainnet-fork"]
 FORKER_LOCAL_ENVIRONMENT = ["mainnet-fork-dev"]
 
 
