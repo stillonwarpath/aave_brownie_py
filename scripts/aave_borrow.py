@@ -22,3 +22,4 @@ def get_lending_pool():
     lending_pool_address = lending_pool_addresses_provider.getLendingPool()
     # ABI
     # Address - Check!
+    lending_pool = interface.ILendingPool(lending_pool_address)
