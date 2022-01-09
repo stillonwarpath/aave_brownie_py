@@ -4,7 +4,7 @@ from scripts.helpful_scripts import get_account
 from web3 import Web3
 
 # 0.1
-ammount = Web3.toWei(0.1, "ether")
+amount = Web3.toWei(0.1, "ether")
 
 
 def main():
