@@ -1,4 +1,4 @@
-from brownie import config, network
+from brownie import config, network, interface
 from scripts.get_weth import get_weth
 from scripts.helpful_scripts import get_account
 
@@ -12,6 +12,10 @@ def main():
     # Address
     lending_pool = get_lending_pool()
 
+
 def get_lending_pool():
     # ABI
     # Address
+    lending_pool_addresses_provider = interface.ILendingPoolAddressesProvider(
+        config["networks"][network.show_active()]["lending_pool_addresses_provider"]
+    )
