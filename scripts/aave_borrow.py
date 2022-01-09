@@ -20,3 +20,5 @@ def get_lending_pool():
         config["networks"][network.show_active()]["lending_pool_addresses_provider"]
     )
     lending_pool_address = lending_pool_addresses_provider.getLendingPool()
+    # ABI
+    # Address - Check!
