@@ -26,6 +26,17 @@ def main():
     print("Deposited!")
     # ...how much?
     borrowable_eth, total_debt = get_borrowable_data(lending_pool, account)
+    # 0.1 ETH deposited
+    # 0.08 liquidation threshold
+    print("Let's borrow!")
+    # DAI in terms of ETH
+    dai_eth_price = get_asset_price(
+        config["networks"][network.show_active()]["dai_eth_price_feed"]
+    )
+
+def get_asset_price(price_feed_address):
+    # ABI
+    # Address
 
 
 def get_borrowable_data(lending_pool, account):
