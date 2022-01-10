@@ -25,7 +25,7 @@ def main():
     tx.wait(1)
     print("Deposited!")
     # ...how much?
-    get_borrowable_data()
+    borrowable_eth, total_debt = get_borrowable_data(lending_pool, account)
 
 
 def get_borrowable_data(lending_pool, account):
